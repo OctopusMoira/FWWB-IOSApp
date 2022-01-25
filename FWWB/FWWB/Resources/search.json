@@ -1,0 +1,73 @@
+{
+    "thisViews": [
+        {
+            "name": "浅草寺",
+            "distance": "0.2km",
+            "cellImageName": "nearbyV0"
+        },
+        {
+            "name": "浅草桥",
+            "distance": "0.3km",
+            "cellImageName": "nearbyV0"
+        },
+        {
+            "name": "浅草楼",
+            "distance": "0.5km",
+            "cellImageName": "nearbyV0"
+        }
+    ],
+    "nearbyViews": [
+        {
+            "name": "东京湾",
+            "distance": "0.6km",
+            "cellImageName": "nearbyV0"
+        },
+        {
+            "name": "新宿",
+            "distance": "0.8km",
+            "cellImageName": "nearbyV1"
+        },
+        {
+            "name": "秋叶原",
+            "distance": "1.2km",
+            "cellImageName": "nearbyV2"
+        }
+    ],
+    "nearbyRestaurants": [
+        {
+            "name": "怀石",
+            "distance": "0.2km",
+            "cellImageName": "nearbyR1"
+        },
+        {
+            "name": "L'Effervescence",
+            "distance": "0.8km",
+            "cellImageName": "nearbyR2"
+        },
+        {
+            "name": "赤坂",
+            "distance": "1.0km",
+            "cellImageName": "nearbyR0"
+        }
+    ],
+    "nearbyHotels": [
+        {
+            "name": "东京湾喜来登大酒店",
+            "distance": "0.2km",
+            "cellImageName": "nearbyH0",
+        },
+        {
+            "name": "Hotel East 21 Tokyo",
+            "distance": "0.8km",
+            "cellImageName": "nearbyH1",
+        },
+        {
+            "name": "浅草豪景酒店",
+            "distance": "1.0km",
+            "cellImageName": "nearbyH2",
+        }
+    ]
+}
+
+
+

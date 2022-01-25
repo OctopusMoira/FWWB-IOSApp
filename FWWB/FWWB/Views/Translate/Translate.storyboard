@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ExO-vn-PJQ">
+            <objects>
+                <viewController storyboardIdentifier="translate" id="Tac-JN-vAt" customClass="ViewController" customModule="FWWB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wzb-1F-cID">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hev-Uz-RAv">
+                                <rect key="frame" x="180" y="52.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="A3S-B5-Zg1"/>
+                                    <constraint firstAttribute="height" constant="15" id="xKb-Pu-xCo"/>
+                                </constraints>
+                                <state key="normal" image="exchange.png"/>
+                                <connections>
+                                    <action selector="exchange:" destination="Tac-JN-vAt" eventType="touchUpInside" id="ok6-15-w1a"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="72i-wh-K2x">
+                                <rect key="frame" x="110" y="35" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vOR-sA-6sA"/>
+                                    <constraint firstAttribute="width" constant="50" id="xXV-dn-SUa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GXp-vg-xll">
+                                <rect key="frame" x="215" y="35" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="evG-zw-DEx"/>
+                                    <constraint firstAttribute="width" constant="50" id="kLa-lN-ocg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hev-Uz-RAv" firstAttribute="centerY" secondItem="GXp-vg-xll" secondAttribute="centerY" id="O5u-BQ-fUP"/>
+                            <constraint firstItem="72i-wh-K2x" firstAttribute="top" secondItem="26h-JP-dAf" secondAttribute="top" constant="15" id="Pld-pr-qj1"/>
+                            <constraint firstItem="GXp-vg-xll" firstAttribute="leading" secondItem="hev-Uz-RAv" secondAttribute="trailing" constant="20" id="RkX-hC-dhR"/>
+                            <constraint firstItem="hev-Uz-RAv" firstAttribute="centerX" secondItem="wzb-1F-cID" secondAttribute="centerX" id="l6L-CQ-35k"/>
+                            <constraint firstItem="hev-Uz-RAv" firstAttribute="leading" secondItem="72i-wh-K2x" secondAttribute="trailing" constant="20" id="uWV-2e-hH1"/>
+                            <constraint firstItem="72i-wh-K2x" firstAttribute="centerY" secondItem="hev-Uz-RAv" secondAttribute="centerY" id="xrd-35-7ky"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="26h-JP-dAf"/>
+                    </view>
+                    <connections>
+                        <outlet property="SrcLanguage" destination="72i-wh-K2x" id="9Ox-He-ke5"/>
+                        <outlet property="TarLanguage" destination="GXp-vg-xll" id="1OY-6M-U8E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7L-di-dhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="-187.55622188905548"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="exchange.png" width="16" height="16"/>
+    </resources>
+</document>

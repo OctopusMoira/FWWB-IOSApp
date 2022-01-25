@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Foot Print MapVC-->
+        <scene sceneID="Swo-Xy-5TJ">
+            <objects>
+                <viewController storyboardIdentifier="footprintmap" id="Mob-0y-aRr" customClass="FootPrintMapVC" customModule="FWWB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clN-28-x04">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EnH-hZ-Nam">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCn-Ge-jAr">
+                                <rect key="frame" x="24" y="36" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="returnPage:" destination="Mob-0y-aRr" eventType="touchUpInside" id="T9f-Nq-eAt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EnH-hZ-Nam" firstAttribute="leading" secondItem="qNu-6I-Qde" secondAttribute="leading" id="9RR-hp-Vnl"/>
+                            <constraint firstItem="EnH-hZ-Nam" firstAttribute="bottom" secondItem="qNu-6I-Qde" secondAttribute="bottom" id="Qv7-VV-Abz"/>
+                            <constraint firstItem="EnH-hZ-Nam" firstAttribute="trailing" secondItem="qNu-6I-Qde" secondAttribute="trailing" id="TBq-YW-or7"/>
+                            <constraint firstItem="EnH-hZ-Nam" firstAttribute="top" secondItem="clN-28-x04" secondAttribute="top" id="X5R-mi-jvH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qNu-6I-Qde"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapview" destination="EnH-hZ-Nam" id="hb9-Vs-lFZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQF-Nl-EtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.40000000000001" y="82.3088455772114"/>
+        </scene>
+    </scenes>
+</document>
